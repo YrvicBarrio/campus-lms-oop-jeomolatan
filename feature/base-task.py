@@ -1,0 +1,19 @@
+from abc import ABC, abstractmethod
+
+class AcademicTask():
+    def __init__(self, title:str, max_point:int):
+        self.title = title
+        self.max_point = max_point
+        self.is_graded = False
+
+    @abstractmethod
+    def submit_work():
+        pass
+
+    @abstractmethod
+    def grade_work():
+        pass
+
+    @abstractmethod
+    def get_details():
+        pass
