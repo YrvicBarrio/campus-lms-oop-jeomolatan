@@ -7,13 +7,15 @@ class AcademicTask(ABC):
         self.is_graded = False
 
     @abstractmethod
-    def submit_work():
+    def submit_work(self):
         pass
 
     @abstractmethod
-    def grade_work():
+    def grade_work(self):
         pass
 
     @abstractmethod
-    def get_details():
+    def get_details(self):
         pass
+
+
