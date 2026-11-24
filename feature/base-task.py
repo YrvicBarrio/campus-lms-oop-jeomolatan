@@ -1,6 +1,6 @@
 from abc import ABC, abstractmethod
 
-class AcademicTask():
+class AcademicTask(ABC):
     def __init__(self, title:str, max_point:int):
         self.title = title
         self.max_point = max_point
